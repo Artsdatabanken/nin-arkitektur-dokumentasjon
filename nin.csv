@@ -6,7 +6,7 @@
 ## Node label with placeholders and HTML.
 ## Default is '%name_of_first_column%'.
 #
-# label: _%repo%_<br><i style="color:gray;">_%kategori%_</i><br><a href="%url%">GitHub</a>
+# label: %repo%<br><i style="color:gray;">%kategori%</i><br><a href="%url%">GitHub</a>
 #
 ## Node style (placeholders are replaced once).
 ## Default is the current style for nodes.##
@@ -29,7 +29,7 @@
 ## The target column may contain a comma-separated list of values.
 ## Multiple connect entries are allowed.
 #
-# connect: {"from": "datadep", "to": "repo", "invert": true, "label": "data", \
+# connect: {"from": "datadep", "to": "repo", "invert": true, "fromLabel": "datadep", "toLabel": "repo", "xlabel": "datadep", \
 #          "style": "curved=1;endArrow=blockThin;endFill=1;fontSize=11;"}
 ## connect: {"from": "codedep", "to": "repo", "style": "curved=1;fontSize=11;"}
 #
@@ -68,7 +68,7 @@
 #
 ## Spacing between nodes. Default is 40.
 #
-# nodespacing: 40
+# nodespacing: 100
 #
 ## Spacing between parallel edges. Default is 40.
 #
@@ -80,43 +80,43 @@
 # layout: auto
 #
 ## ---- CSV below this line. First line are column names. ----
-repo,datadep,codedep,kategori,tredjepart,up-to-date,xxx,image,stroke,fill,url
-bilder-lastejobb,nin-data-lastejobb,lastejobb,last,-,x,,http://nindoc.surge.sh/last.png,#704b6d,#ffaff2,https://github.com/Artsdatabanken/bilder-lastejobb
-data.artsdatabanken.no,"nin-data-lastejobb,kart",-,last,-,,,http://nindoc.surge.sh/last.png,#704b6d,#ffaff2,https://github.com/Artsdatabanken/data.artsdatabanken.no
-dump-mbtiles-metadata,kart,-,last,-,x,,http://nindoc.surge.sh/last.png,#704b6d,#ffaff2,https://github.com/Artsdatabanken/dump-mbtiles-metadata
-fargerampe,nin-data-lastejobb,-,lib,-,x,,http://nindoc.surge.sh/lib.png,#606060,#cccccc,https://github.com/Artsdatabanken/fargerampe
-generic-substring-lookup-api,nin-data-lastejobb,indexed-substring-search,api,-,x,,http://nindoc.surge.sh/api.png,#704c4b,#ffb6af,https://github.com/Artsdatabanken/generic-substring-lookup-api
-httpd,nin-kart-frontend,-,api,-,x,,http://nindoc.surge.sh/api.png,#704c4b,#ffb6af,https://github.com/Artsdatabanken/httpd
-indexed-substring-search,-,-,lib,-,x,,http://nindoc.surge.sh/lib.png,#606060,#cccccc,https://github.com/Artsdatabanken/indexed-substring-search
-kommune,kommune-lastejobb,-,data,-,X,,http://nindoc.surge.sh/data.png,#6d704b,#f2ffaf,https://github.com/Artsdatabanken/kommune
-kommune-kart,kommune-kart-lastejobb,-,data,-,X,,http://nindoc.surge.sh/data.png,#6d704b,#f2ffaf,https://github.com/Artsdatabanken/kommune-kart
-kommune-kart-lastejobb,-,lastejobb,last,kartverket,X,,http://nindoc.surge.sh/last.png,#704b6d,#ffaff2,https://github.com/Artsdatabanken/kommune-kart-lastejobb
-kommune-lastejobb,kommune-kart,lastejobb,last,"ssb,wikidata",X,,http://nindoc.surge.sh/last.png,#704b6d,#ffaff2,https://github.com/Artsdatabanken/kommune-lastejobb
-lastejobb,-,-,lib,-,X,,http://nindoc.surge.sh/lib.png,#606060,#cccccc,https://github.com/Artsdatabanken/lastejobb
-map-conversion,postgre,fme,last,-,x,,http://nindoc.surge.sh/last.png,#704b6d,#ffaff2,https://github.com/Artsdatabanken/map-conversion
-map-image-preview,kart,-,last,-,x,,http://nindoc.surge.sh/last.png,#704b6d,#ffaff2,https://github.com/Artsdatabanken/map-image-preview
-nin-wms-base-configuration,-,-,last,-,x,,http://nindoc.surge.sh/last.png,#704b6d,#ffaff2,https://github.com/Artsdatabanken/nin-wms-base-configuration
-mbtiles-stacker,-,-,api,kartverket,x,,http://nindoc.surge.sh/api.png,#704c4b,#ffb6af,https://github.com/Artsdatabanken/mbtiles-stacker
-natty,-,-,last,-,x,,http://nindoc.surge.sh/last.png,#704b6d,#ffaff2,https://github.com/Artsdatabanken/natty
-naturvern,naturvern-lastejobb,-,data,-,x,,http://nindoc.surge.sh/data.png,#6d704b,#f2ffaf,https://github.com/Artsdatabanken/naturvern
-naturvern-kart,naturvern-kart-lastejobb,-,data,-,x,,http://nindoc.surge.sh/data.png,#6d704b,#f2ffaf,https://github.com/Artsdatabanken/naturvern-kart
-naturvern-kart-lastejobb,kommune-kart,lastejobb,last,mdir,x,,http://nindoc.surge.sh/last.png,#704b6d,#ffaff2,https://github.com/Artsdatabanken/naturvern-kart-lastejobb
-naturvern-lastejobb,"kommune,naturvern-kart",lastejobb,last,"mdir,wikidata",x,,http://nindoc.surge.sh/last.png,#704b6d,#ffaff2,https://github.com/Artsdatabanken/naturvern-lastejobb
-nin-data-lastejobb,"nin-egenskapsdata,dump-mbtiles-metadata,naturvern","lastejobb,typesystem",last,artsnavnebase,x,,http://nindoc.surge.sh/last.png,#704b6d,#ffaff2,https://github.com/Artsdatabanken/nin-data-lastejobb
-nin-egenskapsdata,-,-,data,-,x,,http://nindoc.surge.sh/data.png,#6d704b,#f2ffaf,https://github.com/Artsdatabanken/nin-egenskapsdata
-nin-kart-frontend,kart,typesystem,www,-,x,,http://nindoc.surge.sh/www.png,#704c4b,#ffb6af,https://github.com/Artsdatabanken/nin-kart-frontend
-nin-landskapstype-kart,-,-,last,-,x,,http://nindoc.surge.sh/last.png,#704b6d,#ffaff2,https://github.com/Artsdatabanken/nin-landskapstype-kart
-nin-wms-config,nin-data-lastejobb,-,last,-,x,,http://nindoc.surge.sh/last.png,#704b6d,#ffaff2,https://github.com/Artsdatabanken/nin-wms-config
-ografika,?,,TODO,,,,#N/A,#N/A,#N/A,https://github.com/Artsdatabanken/ografika
-rasterize-mbtiles-from-geojson,?,,last,,,,http://nindoc.surge.sh/last.png,#704b6d,#ffaff2,https://github.com/Artsdatabanken/rasterize-mbtiles-from-geojson
-rasterize-vector-tiles,?,,last,,,,http://nindoc.surge.sh/last.png,#704b6d,#ffaff2,https://github.com/Artsdatabanken/rasterize-vector-tiles
-redList,"natty,postgre",-,last,-,x,,http://nindoc.surge.sh/last.png,#704b6d,#ffaff2,https://github.com/Artsdatabanken/redList
-romlig-api,kart,-,api,-,x,,http://nindoc.surge.sh/api.png,#704c4b,#ffb6af,https://github.com/Artsdatabanken/romlig-api
-stedsnavn-api,stedsnavn-lastejobb,-,api,-,x,,http://nindoc.surge.sh/api.png,#704c4b,#ffb6af,https://github.com/Artsdatabanken/stedsnavn-api
-stedsnavn-lastejobb,-,lastejobb,last,kartverket,x,,http://nindoc.surge.sh/last.png,#704b6d,#ffaff2,https://github.com/Artsdatabanken/stedsnavn-lastejobb
-tiny-tileserver,-,-,api,-,x,,http://nindoc.surge.sh/api.png,#704c4b,#ffb6af,https://github.com/Artsdatabanken/tiny-tileserver
-typesystem,-,-,lib,-,x,,http://nindoc.surge.sh/lib.png,#606060,#cccccc,https://github.com/Artsdatabanken/typesystem
-wms-save-image,-,-,last,kartverket,x,,http://nindoc.surge.sh/last.png,#704b6d,#ffaff2,https://github.com/Artsdatabanken/wms-save-image
-kart,"rasterize-vector-tiles,rasterize-mbtiles-from-geojson",,data,-,x,tilesdata,http://nindoc.surge.sh/data.png,#6d704b,#f2ffaf,https://github.com/Artsdatabanken/kart
-wms,"kart,nin-wms-config",nin-wms-base-configuration,,,,,#N/A,#N/A,#N/A,https://github.com/Artsdatabanken/wms
-bilder-landskap,-,-,data,,x,,http://nindoc.surge.sh/data.png,#6d704b,#f2ffaf,https://github.com/Artsdatabanken/bilder-landskap
+repo,datadep,codedep,kategori,fromLabel,tredjepart,up-to-date,xxx,image,stroke,fill,url
+bilder-lastejobb,nin-data-lastejobb,lastejobb,last,abc,-,x,,http://nindoc.surge.sh/last.png,#704b6d,#ffaff2,https://github.com/Artsdatabanken/bilder-lastejobb
+data.artsdatabanken.no,"nin-data-lastejobb,kart",-,last,abc,-,,,http://nindoc.surge.sh/last.png,#704b6d,#ffaff2,https://github.com/Artsdatabanken/data.artsdatabanken.no
+dump-mbtiles-metadata,kart,-,last,abc,-,x,,http://nindoc.surge.sh/last.png,#704b6d,#ffaff2,https://github.com/Artsdatabanken/dump-mbtiles-metadata
+fargerampe,nin-data-lastejobb,-,lib,abc,-,x,,http://nindoc.surge.sh/lib.png,#606060,#cccccc,https://github.com/Artsdatabanken/fargerampe
+generic-substring-lookup-api,nin-data-lastejobb,indexed-substring-search,api,abc,-,x,,http://nindoc.surge.sh/api.png,#704c4b,#ffb6af,https://github.com/Artsdatabanken/generic-substring-lookup-api
+httpd,nin-kart-frontend,-,api,abc,-,x,,http://nindoc.surge.sh/api.png,#704c4b,#ffb6af,https://github.com/Artsdatabanken/httpd
+indexed-substring-search,-,-,lib,abc,-,x,,http://nindoc.surge.sh/lib.png,#606060,#cccccc,https://github.com/Artsdatabanken/indexed-substring-search
+kommune,kommune-lastejobb,-,data,JSON,-,X,,http://nindoc.surge.sh/data.png,#6d704b,#f2ffaf,https://github.com/Artsdatabanken/kommune
+kommune-kart,kommune-kart-lastejobb,-,kart,GeoJSON,-,X,,#N/A,#N/A,#N/A,https://github.com/Artsdatabanken/kommune-kart
+kommune-kart-lastejobb,-,lastejobb,last,abc,kartverket,X,,http://nindoc.surge.sh/last.png,#704b6d,#ffaff2,https://github.com/Artsdatabanken/kommune-kart-lastejobb
+kommune-lastejobb,kommune-kart,lastejobb,last,abc,"ssb,wikidata",X,,http://nindoc.surge.sh/last.png,#704b6d,#ffaff2,https://github.com/Artsdatabanken/kommune-lastejobb
+lastejobb,-,-,lib,abc,-,X,,http://nindoc.surge.sh/lib.png,#606060,#cccccc,https://github.com/Artsdatabanken/lastejobb
+map-conversion,postgre,fme,last,abc,-,x,,http://nindoc.surge.sh/last.png,#704b6d,#ffaff2,https://github.com/Artsdatabanken/map-conversion
+map-image-preview,kart,-,last,abc,-,x,,http://nindoc.surge.sh/last.png,#704b6d,#ffaff2,https://github.com/Artsdatabanken/map-image-preview
+nin-wms-base-configuration,-,-,last,abc,-,x,,http://nindoc.surge.sh/last.png,#704b6d,#ffaff2,https://github.com/Artsdatabanken/nin-wms-base-configuration
+mbtiles-stacker,-,-,api,abc,kartverket,x,,http://nindoc.surge.sh/api.png,#704c4b,#ffb6af,https://github.com/Artsdatabanken/mbtiles-stacker
+natty,-,-,last,abc,-,x,,http://nindoc.surge.sh/last.png,#704b6d,#ffaff2,https://github.com/Artsdatabanken/natty
+naturvern,naturvern-lastejobb,-,data,abc,-,x,,http://nindoc.surge.sh/data.png,#6d704b,#f2ffaf,https://github.com/Artsdatabanken/naturvern
+naturvern-kart,naturvern-kart-lastejobb,-,kart,abc,-,x,,#N/A,#N/A,#N/A,https://github.com/Artsdatabanken/naturvern-kart
+naturvern-kart-lastejobb,kommune-kart,lastejobb,last,abc,mdir,x,,http://nindoc.surge.sh/last.png,#704b6d,#ffaff2,https://github.com/Artsdatabanken/naturvern-kart-lastejobb
+naturvern-lastejobb,"kommune,naturvern-kart",lastejobb,last,abc,"mdir,wikidata",x,,http://nindoc.surge.sh/last.png,#704b6d,#ffaff2,https://github.com/Artsdatabanken/naturvern-lastejobb
+nin-data-lastejobb,"nin-egenskapsdata,dump-mbtiles-metadata,naturvern","lastejobb,typesystem",last,abc,artsnavnebase,x,,http://nindoc.surge.sh/last.png,#704b6d,#ffaff2,https://github.com/Artsdatabanken/nin-data-lastejobb
+nin-egenskapsdata,-,-,data,abc,-,x,,http://nindoc.surge.sh/data.png,#6d704b,#f2ffaf,https://github.com/Artsdatabanken/nin-egenskapsdata
+nin-kart-frontend,kart,typesystem,www,abc,-,x,,http://nindoc.surge.sh/www.png,#704c4b,#ffb6af,https://github.com/Artsdatabanken/nin-kart-frontend
+nin-landskapstype-kart,-,-,last,abc,-,x,,http://nindoc.surge.sh/last.png,#704b6d,#ffaff2,https://github.com/Artsdatabanken/nin-landskapstype-kart
+nin-wms-config,nin-data-lastejobb,-,last,abc,-,x,,http://nindoc.surge.sh/last.png,#704b6d,#ffaff2,https://github.com/Artsdatabanken/nin-wms-config
+ografika,?,,TODO,abc,,,,#N/A,#N/A,#N/A,https://github.com/Artsdatabanken/ografika
+rasterize-mbtiles-from-geojson,?,,last,abc,,,,http://nindoc.surge.sh/last.png,#704b6d,#ffaff2,https://github.com/Artsdatabanken/rasterize-mbtiles-from-geojson
+rasterize-vector-tiles,?,,last,abc,,,,http://nindoc.surge.sh/last.png,#704b6d,#ffaff2,https://github.com/Artsdatabanken/rasterize-vector-tiles
+redList,"natty,postgre",-,last,abc,-,x,,http://nindoc.surge.sh/last.png,#704b6d,#ffaff2,https://github.com/Artsdatabanken/redList
+romlig-api,kart,-,api,abc,-,x,,http://nindoc.surge.sh/api.png,#704c4b,#ffb6af,https://github.com/Artsdatabanken/romlig-api
+stedsnavn-api,stedsnavn-lastejobb,-,api,abc,-,x,,http://nindoc.surge.sh/api.png,#704c4b,#ffb6af,https://github.com/Artsdatabanken/stedsnavn-api
+stedsnavn-lastejobb,-,lastejobb,last,abc,kartverket,x,,http://nindoc.surge.sh/last.png,#704b6d,#ffaff2,https://github.com/Artsdatabanken/stedsnavn-lastejobb
+tiny-tileserver,-,-,api,abc,-,x,,http://nindoc.surge.sh/api.png,#704c4b,#ffb6af,https://github.com/Artsdatabanken/tiny-tileserver
+typesystem,-,-,lib,abc,-,x,,http://nindoc.surge.sh/lib.png,#606060,#cccccc,https://github.com/Artsdatabanken/typesystem
+wms-save-image,-,-,last,abc,kartverket,x,,http://nindoc.surge.sh/last.png,#704b6d,#ffaff2,https://github.com/Artsdatabanken/wms-save-image
+kart,"rasterize-vector-tiles,rasterize-mbtiles-from-geojson",,data,abc,-,x,tilesdata,http://nindoc.surge.sh/data.png,#6d704b,#f2ffaf,https://github.com/Artsdatabanken/kart
+wms,"kart,nin-wms-config",nin-wms-base-configuration,,abc,,,,#N/A,#N/A,#N/A,https://github.com/Artsdatabanken/wms
+bilder-landskap,-,-,data,abc,,x,,http://nindoc.surge.sh/data.png,#6d704b,#f2ffaf,https://github.com/Artsdatabanken/bilder-landskap
