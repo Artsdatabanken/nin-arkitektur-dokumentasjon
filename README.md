@@ -1,0 +1,1 @@
+![Component diagram](./komponentdiagram.svg)
