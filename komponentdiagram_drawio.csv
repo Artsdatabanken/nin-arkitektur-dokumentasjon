@@ -6,7 +6,7 @@
 ## Node label with placeholders and HTML.
 ## Default is '%name_of_first_column%'.
 #
-# label: <a href="%url%">%repo%</a>
+# label: %repo%
 ## label: %repo%<br><i style="color:gray;">%kategori%</i><br><a href="%url%">GitHub</a>
 #
 ## Node style (placeholders are replaced once).
