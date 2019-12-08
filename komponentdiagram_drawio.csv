@@ -6,7 +6,7 @@
 ## Node label with placeholders and HTML.
 ## Default is '%name_of_first_column%'.
 #
-# label: <a href="%link%">%repo%</a>
+# label: <a target="_top" style="color: #111; text-decoration: none" href="%link%">%repo%</a>
 ## label: %repo%<br><i style="color:gray;">%kategori%</i><br><a href="%url%">GitHub</a>
 #
 ## Node style (placeholders are replaced once).
@@ -85,15 +85,21 @@
 #
 ## ---- CSV below this line. First line are column names. ----
 repo,datadep,codedep,kategori,utformat,tredjepart,up-to-date,datapath,image,stroke,fill,url
-art,art-lastejobb,-,data,JSON,-,x,tilesdata/Biota,https://github.com/Artsdatabanken/nin-arkitektur-dokumentasjon/raw/master/image/data.png,#6d704b,#f2ffaf,https://github.com/Artsdatabanken/art
-art-beskrivelse,art-beskrivelse-lastejobb,-,data,JSON,-,x,,https://github.com/Artsdatabanken/nin-arkitektur-dokumentasjon/raw/master/image/data.png,#6d704b,#f2ffaf,https://github.com/Artsdatabanken/art-beskrivelse
-art-beskrivelse-lastejobb,beta.adb.no,lastejobb,last,JSON,,x,,https://github.com/Artsdatabanken/nin-arkitektur-dokumentasjon/raw/master/image/last.png,#704b6d,#ffaff2,https://github.com/Artsdatabanken/art-beskrivelse-lastejobb
-art-lastejobb,"art-takson,fremmed-art,art-beskrivelse,truet-art",lastejobb,last,JSON,,x,,https://github.com/Artsdatabanken/nin-arkitektur-dokumentasjon/raw/master/image/last.png,#704b6d,#ffaff2,https://github.com/Artsdatabanken/art-lastejobb
+art-databank,art-databank-lastejobb,-,data,JSON,-,x,,https://github.com/Artsdatabanken/nin-arkitektur-dokumentasjon/raw/master/image/data.png,#6d704b,#f2ffaf,https://github.com/Artsdatabanken/art-databank
+art-databank-lastejobb,beta.adb.no,lastejobb,last,JSON,,x,,https://github.com/Artsdatabanken/nin-arkitektur-dokumentasjon/raw/master/image/last.png,#704b6d,#ffaff2,https://github.com/Artsdatabanken/art-databank-lastejobb
+art-fremmed,art-fremmed-lastejobb,-,data,JSON,-,x,,https://github.com/Artsdatabanken/nin-arkitektur-dokumentasjon/raw/master/image/data.png,#6d704b,#f2ffaf,https://github.com/Artsdatabanken/art-fremmed
+art-fremmed-lastejobb,"beta.adb.no,art-fremmed-ubehandlet",lastejobb,last,JSON,,x,,https://github.com/Artsdatabanken/nin-arkitektur-dokumentasjon/raw/master/image/last.png,#704b6d,#ffaff2,https://github.com/Artsdatabanken/art-fremmed-lastejobb
+art-fremmed-ubehandlet,-,-,data,JSON,-,x,,https://github.com/Artsdatabanken/nin-arkitektur-dokumentasjon/raw/master/image/data.png,#6d704b,#f2ffaf,https://github.com/Artsdatabanken/art-fremmed-ubehandlet
+art-lastejobb,"art-takson,art-fremmed,art-databank,art-truet",lastejobb,last,JSON,,x,,https://github.com/Artsdatabanken/nin-arkitektur-dokumentasjon/raw/master/image/last.png,#704b6d,#ffaff2,https://github.com/Artsdatabanken/art-lastejobb
 art-takson,art-takson-lastejobb,-,data,JSON,-,x,,https://github.com/Artsdatabanken/nin-arkitektur-dokumentasjon/raw/master/image/data.png,#6d704b,#f2ffaf,https://github.com/Artsdatabanken/art-takson
 art-takson-lastejobb,"artsnavnebase,art-takson-ubehandlet",lastejobb,last,JSON,,x,,https://github.com/Artsdatabanken/nin-arkitektur-dokumentasjon/raw/master/image/last.png,#704b6d,#ffaff2,https://github.com/Artsdatabanken/art-takson-lastejobb
 art-takson-ubehandlet,,-,data,JSON,-,x,,https://github.com/Artsdatabanken/nin-arkitektur-dokumentasjon/raw/master/image/data.png,#6d704b,#f2ffaf,https://github.com/Artsdatabanken/art-takson-ubehandlet
+art-truet,art-truet-lastejobb,-,data,JSON,-,x,,https://github.com/Artsdatabanken/nin-arkitektur-dokumentasjon/raw/master/image/data.png,#6d704b,#f2ffaf,https://github.com/Artsdatabanken/art-truet
+art-truet-lastejobb,art-truet-ubehandlet,lastejobb,last,JSON,,x,,https://github.com/Artsdatabanken/nin-arkitektur-dokumentasjon/raw/master/image/last.png,#704b6d,#ffaff2,https://github.com/Artsdatabanken/art-truet-lastejobb
+art-truet-ubehandlet,,-,data,JSON,-,x,,https://github.com/Artsdatabanken/nin-arkitektur-dokumentasjon/raw/master/image/data.png,#6d704b,#f2ffaf,https://github.com/Artsdatabanken/art-truet-ubehandlet
+art,art-lastejobb,-,data,JSON,-,x,tilesdata/Biota,https://github.com/Artsdatabanken/nin-arkitektur-dokumentasjon/raw/master/image/data.png,#6d704b,#f2ffaf,https://github.com/Artsdatabanken/art
 badges,,-,data,PNG,-,x,,https://github.com/Artsdatabanken/nin-arkitektur-dokumentasjon/raw/master/image/data.png,#6d704b,#f2ffaf,https://github.com/Artsdatabanken/badges
-bilde-lastejobb,"nin-data-lastejobb,badges,landskap-bilde",lastejobb,last,PNG,-,x,,https://github.com/Artsdatabanken/nin-arkitektur-dokumentasjon/raw/master/image/last.png,#704b6d,#ffaff2,https://github.com/Artsdatabanken/bilde-lastejobb
+bilde-lastejobb,"nin-data-lastejobb,badges,landskap-bilde,phylopic-lastejobb",lastejobb,last,PNG,-,x,,https://github.com/Artsdatabanken/nin-arkitektur-dokumentasjon/raw/master/image/last.png,#704b6d,#ffaff2,https://github.com/Artsdatabanken/bilde-lastejobb
 color-blend,,,lib,PNG,,,,,,,
 data.artsdatabanken.no,kart,-,last,HTML,-,,,https://github.com/Artsdatabanken/nin-arkitektur-dokumentasjon/raw/master/image/last.png,#704b6d,#ffaff2,https://github.com/Artsdatabanken/data.artsdatabanken.no
 datakilde,datakilde-lastejobb,-,data,JSON,-,X,,https://github.com/Artsdatabanken/nin-arkitektur-dokumentasjon/raw/master/image/data.png,#6d704b,#f2ffaf,https://github.com/Artsdatabanken/datakilde
@@ -101,26 +107,20 @@ datakilde-lastejobb,datakilde-ubehandlet,lastejobb,last,JSON,,x,,https://github.
 datakilde-ubehandlet,-,-,data,JSON,-,X,,https://github.com/Artsdatabanken/nin-arkitektur-dokumentasjon/raw/master/image/data.png,#6d704b,#f2ffaf,https://github.com/Artsdatabanken/datakilde-ubehandlet
 deploy-naturvern-kart,naturvern-kart,,last,GeoJSON,,x,,https://github.com/Artsdatabanken/nin-arkitektur-dokumentasjon/raw/master/image/last.png,#704b6d,#ffaff2,https://github.com/Artsdatabanken/deploy-naturvern-kart
 dump-mbtiles-metadata,staging,-,last,JSON,-,x,,https://github.com/Artsdatabanken/nin-arkitektur-dokumentasjon/raw/master/image/last.png,#704b6d,#ffaff2,https://github.com/Artsdatabanken/dump-mbtiles-metadata
-filindeks,dump-mbtiles-metadata,,data,JSON,-,,,https://github.com/Artsdatabanken/nin-arkitektur-dokumentasjon/raw/master/image/data.png,#6d704b,#f2ffaf,https://github.com/Artsdatabanken/filindeks
 fargerampe,-,-,lib,PNG,-,x,,https://github.com/Artsdatabanken/nin-arkitektur-dokumentasjon/raw/master/image/lib.png,#606060,#cccccc,https://github.com/Artsdatabanken/fargerampe
+filindeks,dump-mbtiles-metadata,,data,JSON,-,,,https://github.com/Artsdatabanken/nin-arkitektur-dokumentasjon/raw/master/image/data.png,#6d704b,#f2ffaf,https://github.com/Artsdatabanken/filindeks
 forvaltningsportal-lastejobb,-,lastejobb,last,JSON,GeoNorge,x,,https://github.com/Artsdatabanken/nin-arkitektur-dokumentasjon/raw/master/image/last.png,#704b6d,#ffaff2,https://github.com/Artsdatabanken/forvaltningsportal-lastejobb
 forvaltningsportal-ubehandlet,forvaltningsportal-lastejobb,,data,JSON,,x,,https://github.com/Artsdatabanken/nin-arkitektur-dokumentasjon/raw/master/image/data.png,#6d704b,#f2ffaf,https://github.com/Artsdatabanken/forvaltningsportal-ubehandlet
-fremmed-art,fremmed-art-lastejobb,-,data,JSON,-,x,,https://github.com/Artsdatabanken/nin-arkitektur-dokumentasjon/raw/master/image/data.png,#6d704b,#f2ffaf,https://github.com/Artsdatabanken/fremmed-art
-fremmed-art-lastejobb,"beta.adb.no,fremmed-art-ubehandlet",lastejobb,last,JSON,,x,,https://github.com/Artsdatabanken/nin-arkitektur-dokumentasjon/raw/master/image/last.png,#704b6d,#ffaff2,https://github.com/Artsdatabanken/fremmed-art-lastejobb
-fremmed-art-ubehandlet,-,-,data,JSON,-,x,,https://github.com/Artsdatabanken/nin-arkitektur-dokumentasjon/raw/master/image/data.png,#6d704b,#f2ffaf,https://github.com/Artsdatabanken/fremmed-art-ubehandlet
 generic-substring-lookup-api,nin-data-lastejobb,indexed-substring-search,api,REST,-,x,,https://github.com/Artsdatabanken/nin-arkitektur-dokumentasjon/raw/master/image/api.png,#704c4b,#ffb6af,https://github.com/Artsdatabanken/generic-substring-lookup-api
 geojson-subset-kart-lastejobb,staging,,last,GeoJSON,,x,,https://github.com/Artsdatabanken/nin-arkitektur-dokumentasjon/raw/master/image/last.png,#704b6d,#ffaff2,https://github.com/Artsdatabanken/geojson-subset-kart-lastejobb
 httpd,nin-kart-frontend,-,api,HTML,-,x,,https://github.com/Artsdatabanken/nin-arkitektur-dokumentasjon/raw/master/image/api.png,#704c4b,#ffb6af,https://github.com/Artsdatabanken/httpd
 indexed-substring-search,-,-,lib,JSON,-,x,,https://github.com/Artsdatabanken/nin-arkitektur-dokumentasjon/raw/master/image/lib.png,#606060,#cccccc,https://github.com/Artsdatabanken/indexed-substring-search
-staging-kart,"rasterize-vector-tiles,rasterize-mbtiles-from-geojson,kart-lastejobb,landskap-kart-lastejobb",,data,"GeoJSON,MBTILES",-,x,tilesdata,https://github.com/Artsdatabanken/nin-arkitektur-dokumentasjon/raw/master/image/data.png,#6d704b,#f2ffaf,https://github.com/Artsdatabanken/staging-kart
-staging-art,"bilde-lastejobb,wms-save-image,map-image-preview",,data,rsync,-,x,tilesdata,https://github.com/Artsdatabanken/nin-arkitektur-dokumentasjon/raw/master/image/data.png,#6d704b,#f2ffaf,https://github.com/Artsdatabanken/staging-art
-staging,"staging-kart,staging-art",,data,rsync,-,x,tilesdata,https://github.com/Artsdatabanken/nin-arkitektur-dokumentasjon/raw/master/image/data.png,#6d704b,#f2ffaf,https://github.com/Artsdatabanken/staging
 kart,staging,,data,*,-,x,tilesdata,https://github.com/Artsdatabanken/nin-arkitektur-dokumentasjon/raw/master/image/data.png,#6d704b,#f2ffaf,https://github.com/Artsdatabanken/kart
 kart-lastejobb,,lastejobb,last,MBTILES,"ngu,nina",,,https://github.com/Artsdatabanken/nin-arkitektur-dokumentasjon/raw/master/image/last.png,#704b6d,#ffaff2,https://github.com/Artsdatabanken/kart-lastejobb
 kommune,kommune-lastejobb,-,data,JSON,-,X,,https://github.com/Artsdatabanken/nin-arkitektur-dokumentasjon/raw/master/image/data.png,#6d704b,#f2ffaf,https://github.com/Artsdatabanken/kommune
 kommune-kart,kommune-kart-lastejobb,-,kart,GeoJSON,-,X,,https://github.com/Artsdatabanken/nin-arkitektur-dokumentasjon/raw/master/image/kart.png,#4b7051,#afffc8,https://github.com/Artsdatabanken/kommune-kart
-kommune-kart-lastejobb,-,lastejobb,last,GeoJSON,kartverket,X,,https://github.com/Artsdatabanken/nin-arkitektur-dokumentasjon/raw/master/image/last.png,#704b6d,#ffaff2,https://github.com/Artsdatabanken/kommune-kart-lastejobb
-kommune-lastejobb,kommune-kart,lastejobb,last,JSON,"ssb,wikidata",X,,https://github.com/Artsdatabanken/nin-arkitektur-dokumentasjon/raw/master/image/last.png,#704b6d,#ffaff2,https://github.com/Artsdatabanken/kommune-lastejobb
+kommune-kart-lastejobb,"geonorge-kommuner,geonorge-fylker",lastejobb,last,GeoJSON,kartverket,X,,https://github.com/Artsdatabanken/nin-arkitektur-dokumentasjon/raw/master/image/last.png,#704b6d,#ffaff2,https://github.com/Artsdatabanken/kommune-kart-lastejobb
+kommune-lastejobb,"kommune-kart,wikidata-kommuner,wikidata-fylker",lastejobb,last,JSON,"ssb,wikidata",X,,https://github.com/Artsdatabanken/nin-arkitektur-dokumentasjon/raw/master/image/last.png,#704b6d,#ffaff2,https://github.com/Artsdatabanken/kommune-lastejobb
 landskap,landskap-lastejobb,-,data,JSON,-,X,,https://github.com/Artsdatabanken/nin-arkitektur-dokumentasjon/raw/master/image/data.png,#6d704b,#f2ffaf,https://github.com/Artsdatabanken/landskap
 landskap-bilde,-,-,data,JPG,,x,,https://github.com/Artsdatabanken/nin-arkitektur-dokumentasjon/raw/master/image/data.png,#6d704b,#f2ffaf,https://github.com/Artsdatabanken/landskap-bilde
 landskap-kart-lastejobb,-,-,last,GeoJSON,-,x,,https://github.com/Artsdatabanken/nin-arkitektur-dokumentasjon/raw/master/image/last.png,#704b6d,#ffaff2,https://github.com/Artsdatabanken/landskap-kart-lastejobb
@@ -130,34 +130,44 @@ lastejobb,-,-,lib,JavaScript,-,X,,https://github.com/Artsdatabanken/nin-arkitekt
 map-image-preview,staging-kart,-,last,PNG,-,x,,https://github.com/Artsdatabanken/nin-arkitektur-dokumentasjon/raw/master/image/last.png,#704b6d,#ffaff2,https://github.com/Artsdatabanken/map-image-preview
 maritim-grense,maritim-grense-lastejobb,-,data,JSON,-,x,,https://github.com/Artsdatabanken/nin-arkitektur-dokumentasjon/raw/master/image/data.png,#6d704b,#f2ffaf,https://github.com/Artsdatabanken/maritim-grense
 maritim-grense-lastejobb,maritim-grense-ubehandlet,lastejobb,last,JSON,,x,,https://github.com/Artsdatabanken/nin-arkitektur-dokumentasjon/raw/master/image/last.png,#704b6d,#ffaff2,https://github.com/Artsdatabanken/maritim-grense-lastejobb
-maritim-grense-ubehandlet,,-,data,JSON,-,x,,https://github.com/Artsdatabanken/nin-arkitektur-dokumentasjon/raw/master/image/data.png,#6d704b,#f2ffaf,https://github.com/Artsdatabanken/maritim-grense-ubehandlet
+maritim-grense-ubehandlet,-,-,data,JSON,-,x,,https://github.com/Artsdatabanken/nin-arkitektur-dokumentasjon/raw/master/image/data.png,#6d704b,#f2ffaf,https://github.com/Artsdatabanken/maritim-grense-ubehandlet
 mbtiles-stacker,-,-,api,PNG,kartverket,x,,https://github.com/Artsdatabanken/nin-arkitektur-dokumentasjon/raw/master/image/api.png,#704c4b,#ffb6af,https://github.com/Artsdatabanken/mbtiles-stacker
+multi-layer-map-api,kart,,api,PNG,,x,/dockerdata/multi-layer-map-api,https://github.com/Artsdatabanken/nin-arkitektur-dokumentasjon/raw/master/image/api.png,#704c4b,#ffb6af,https://github.com/Artsdatabanken/multi-layer-map-api
+myr-kart-lastejobb,-,lastejobb,last,GeoJSON,ntnu vm,x,,https://github.com/Artsdatabanken/nin-arkitektur-dokumentasjon/raw/master/image/last.png,#704b6d,#ffaff2,https://github.com/Artsdatabanken/myr-kart-lastejobb
 natursystem,natursystem-lastejobb,-,data,JSON,-,X,,https://github.com/Artsdatabanken/nin-arkitektur-dokumentasjon/raw/master/image/data.png,#6d704b,#f2ffaf,https://github.com/Artsdatabanken/natursystem
 natursystem-artsliste-lastejobb,natursystem-artsliste-ubehandlet,lastejobb,last,JSON,-,x,,https://github.com/Artsdatabanken/nin-arkitektur-dokumentasjon/raw/master/image/last.png,#704b6d,#ffaff2,https://github.com/Artsdatabanken/natursystem-artsliste-lastejobb
-natursystem-artsliste-ubehandlet,,,data,XLSX,,,,,,,
+natursystem-artsliste-ubehandlet,,,data,XLSX,,,,https://github.com/Artsdatabanken/nin-arkitektur-dokumentasjon/raw/master/image/data.png,#6d704b,#f2ffaf,https://github.com/Artsdatabanken/natursystem-artsliste-ubehandlet
 natursystem-lastejobb,natursystem-ubehandlet,lastejobb,last,JSON,,x,,https://github.com/Artsdatabanken/nin-arkitektur-dokumentasjon/raw/master/image/last.png,#704b6d,#ffaff2,https://github.com/Artsdatabanken/natursystem-lastejobb
+natursystem-truet-lastejobb,,lastejobb,last,JSON,,x,,https://github.com/Artsdatabanken/nin-arkitektur-dokumentasjon/raw/master/image/last.png,#704b6d,#ffaff2,https://github.com/Artsdatabanken/natursystem-truet-lastejobb
 natursystem-ubehandlet,-,-,data,JSON,-,X,,https://github.com/Artsdatabanken/nin-arkitektur-dokumentasjon/raw/master/image/data.png,#6d704b,#f2ffaf,https://github.com/Artsdatabanken/natursystem-ubehandlet
 naturvern,naturvern-lastejobb,-,data,JSON,-,X,,https://github.com/Artsdatabanken/nin-arkitektur-dokumentasjon/raw/master/image/data.png,#6d704b,#f2ffaf,https://github.com/Artsdatabanken/naturvern
 naturvern-kart,naturvern-kart-lastejobb,-,kart,GeoJSON,-,x,,https://github.com/Artsdatabanken/nin-arkitektur-dokumentasjon/raw/master/image/kart.png,#4b7051,#afffc8,https://github.com/Artsdatabanken/naturvern-kart
-naturvern-kart-lastejobb,kommune-kart,lastejobb,last,GeoJSON,mdir,x,,https://github.com/Artsdatabanken/nin-arkitektur-dokumentasjon/raw/master/image/last.png,#704b6d,#ffaff2,https://github.com/Artsdatabanken/naturvern-kart-lastejobb
-naturvern-lastejobb,"kommune,naturvern-kart,naturvern-ubehandlet",lastejobb,last,JSON,"mdir,wikidata",x,,https://github.com/Artsdatabanken/nin-arkitektur-dokumentasjon/raw/master/image/last.png,#704b6d,#ffaff2,https://github.com/Artsdatabanken/naturvern-lastejobb
+naturvern-kart-lastejobb,"kommune-kart,geonorge-naturvernområder",lastejobb,last,GeoJSON,mdir,x,,https://github.com/Artsdatabanken/nin-arkitektur-dokumentasjon/raw/master/image/last.png,#704b6d,#ffaff2,https://github.com/Artsdatabanken/naturvern-kart-lastejobb
+naturvern-lastejobb,"kommune,fylke,naturvern-kart,naturvern-ubehandlet,wikidata-naturvernområder",lastejobb,last,JSON,"mdir,wikidata",x,,https://github.com/Artsdatabanken/nin-arkitektur-dokumentasjon/raw/master/image/last.png,#704b6d,#ffaff2,https://github.com/Artsdatabanken/naturvern-lastejobb
 naturvern-ubehandlet,-,-,data,JSON,-,X,,https://github.com/Artsdatabanken/nin-arkitektur-dokumentasjon/raw/master/image/data.png,#6d704b,#f2ffaf,https://github.com/Artsdatabanken/naturvern-ubehandlet
 nin-data-lastejobb,"naturvern,art,landskap,natursystem,stedsnavn,naturvern,datakilde,maritim-grense,filindeks","lastejobb,color-blend",last,JSON,,X,/home/grunnkart/tilesdata,https://github.com/Artsdatabanken/nin-arkitektur-dokumentasjon/raw/master/image/last.png,#704b6d,#ffaff2,https://github.com/Artsdatabanken/nin-data-lastejobb
 nin-kart,kart,"stedsnavn-api,punkt-oppslag-api,kart,mbtiles-stacker,httpd,tiny-tileserver",www,SPA,-,x,,https://github.com/Artsdatabanken/nin-arkitektur-dokumentasjon/raw/master/image/www.png,#704c4b,#ffb6af,https://github.com/Artsdatabanken/nin-kart
 nin-kode,kart,,data,JSON,-,,,https://github.com/Artsdatabanken/nin-arkitektur-dokumentasjon/raw/master/image/data.png,#6d704b,#f2ffaf,https://github.com/Artsdatabanken/nin-kode
 nin-kode-api,nin-kode,,api,JSON,-,,,https://github.com/Artsdatabanken/nin-arkitektur-dokumentasjon/raw/master/image/api.png,#704c4b,#ffb6af,https://github.com/Artsdatabanken/nin-kode-api
 nin-wms-config,kart,-,last,CFG,-,x,,https://github.com/Artsdatabanken/nin-arkitektur-dokumentasjon/raw/master/image/last.png,#704b6d,#ffaff2,https://github.com/Artsdatabanken/nin-wms-config
+phylopic-lastejobb,-,lastejobb,last,"SVG, PNG",phylopic,x,,https://github.com/Artsdatabanken/nin-arkitektur-dokumentasjon/raw/master/image/last.png,#704b6d,#ffaff2,https://github.com/Artsdatabanken/phylopic-lastejobb
 punkt-oppslag-api,punkt-oppslag-lastejobb,,api,JSON,,x,/dockerdata/punkt-oppslag-api,https://github.com/Artsdatabanken/nin-arkitektur-dokumentasjon/raw/master/image/api.png,#704c4b,#ffb6af,https://github.com/Artsdatabanken/punkt-oppslag-api
 punkt-oppslag-lastejobb,kart,lastejobb,last,SQLite,,x,/dockerdata/punkt-oppslag-api,https://github.com/Artsdatabanken/nin-arkitektur-dokumentasjon/raw/master/image/last.png,#704b6d,#ffaff2,https://github.com/Artsdatabanken/punkt-oppslag-lastejobb
 rasterize-mbtiles-from-geojson,staging-kart,,last,MBTILES,,,,https://github.com/Artsdatabanken/nin-arkitektur-dokumentasjon/raw/master/image/last.png,#704b6d,#ffaff2,https://github.com/Artsdatabanken/rasterize-mbtiles-from-geojson
 rasterize-vector-tiles,staging-kart,,last,MBTILES,,,,https://github.com/Artsdatabanken/nin-arkitektur-dokumentasjon/raw/master/image/last.png,#704b6d,#ffaff2,https://github.com/Artsdatabanken/rasterize-vector-tiles
 romlig-api,kart,-,api,REST,-,x,,https://github.com/Artsdatabanken/nin-arkitektur-dokumentasjon/raw/master/image/api.png,#704c4b,#ffb6af,https://github.com/Artsdatabanken/romlig-api
+staging,"staging-kart,staging-art",,data,rsync,-,x,tilesdata,https://github.com/Artsdatabanken/nin-arkitektur-dokumentasjon/raw/master/image/data.png,#6d704b,#f2ffaf,https://github.com/Artsdatabanken/staging
+staging-art,"bilde-lastejobb,wms-save-image,map-image-preview",,data,rsync,-,x,tilesdata,https://github.com/Artsdatabanken/nin-arkitektur-dokumentasjon/raw/master/image/data.png,#6d704b,#f2ffaf,https://github.com/Artsdatabanken/staging-art
+staging-kart,"rasterize-vector-tiles,rasterize-mbtiles-from-geojson,kart-lastejobb,landskap-kart-lastejobb,myr-kart-lastejobb",,data,"GeoJSON,MBTILES",-,x,tilesdata,https://github.com/Artsdatabanken/nin-arkitektur-dokumentasjon/raw/master/image/data.png,#6d704b,#f2ffaf,https://github.com/Artsdatabanken/staging-kart
 stedsnavn,stedsnavn-lastejobb,,data,JSON,kartverket,x,,https://github.com/Artsdatabanken/nin-arkitektur-dokumentasjon/raw/master/image/data.png,#6d704b,#f2ffaf,https://github.com/Artsdatabanken/stedsnavn
 stedsnavn-api,stedsnavn-lastejobb,-,api,REST,-,x,,https://github.com/Artsdatabanken/nin-arkitektur-dokumentasjon/raw/master/image/api.png,#704c4b,#ffb6af,https://github.com/Artsdatabanken/stedsnavn-api
 stedsnavn-lastejobb,-,lastejobb,last,JSON,kartverket,x,,https://github.com/Artsdatabanken/nin-arkitektur-dokumentasjon/raw/master/image/last.png,#704b6d,#ffaff2,https://github.com/Artsdatabanken/stedsnavn-lastejobb
 tiny-tileserver,kart,-,api,HTTP,-,x,,https://github.com/Artsdatabanken/nin-arkitektur-dokumentasjon/raw/master/image/api.png,#704c4b,#ffb6af,https://github.com/Artsdatabanken/tiny-tileserver
-truet-art,truet-art-lastejobb,-,data,JSON,-,x,,https://github.com/Artsdatabanken/nin-arkitektur-dokumentasjon/raw/master/image/data.png,#6d704b,#f2ffaf,https://github.com/Artsdatabanken/truet-art
-truet-art-lastejobb,truet-art-ubehandlet,lastejobb,last,JSON,,x,,https://github.com/Artsdatabanken/nin-arkitektur-dokumentasjon/raw/master/image/last.png,#704b6d,#ffaff2,https://github.com/Artsdatabanken/truet-art-lastejobb
-truet-art-ubehandlet,,-,data,JSON,-,x,,https://github.com/Artsdatabanken/nin-arkitektur-dokumentasjon/raw/master/image/data.png,#6d704b,#f2ffaf,https://github.com/Artsdatabanken/truet-art-ubehandlet
 wms,"kart,nin-wms-config",nin-wms-base-configuration,api,PNG,,,,https://github.com/Artsdatabanken/nin-arkitektur-dokumentasjon/raw/master/image/api.png,#704c4b,#ffb6af,https://github.com/Artsdatabanken/wms
 wms-save-image,-,-,last,PNG,kartverket,x,,https://github.com/Artsdatabanken/nin-arkitektur-dokumentasjon/raw/master/image/last.png,#704b6d,#ffaff2,https://github.com/Artsdatabanken/wms-save-image
+geonorge-fylker,-,-,ext,GeoJSON,kartverket,x,,https://github.com/Artsdatabanken/nin-arkitektur-dokumentasjon/raw/master/image/ext.png,#606060,#cccccc,https://kartkatalog.geonorge.no/metadata/6093c8a8-fa80-11e6-bc64-92361f002671
+geonorge-kommuner,-,-,ext,GeoJSON,kartverket,x,,https://github.com/Artsdatabanken/nin-arkitektur-dokumentasjon/raw/master/image/ext.png,#606060,#cccccc,https://kartkatalog.geonorge.no/metadata/f015cd24-a14b-42f3-b695-848cb88d9657
+geonorge-naturvernområder,-,-,ext,GeoJSON,miljødirektoratet,x,,https://github.com/Artsdatabanken/nin-arkitektur-dokumentasjon/raw/master/image/ext.png,#606060,#cccccc,https://kartkatalog.geonorge.no/metadata/f015cd24-a14b-42f3-b695-848cb88d9657
+wikidata-kommuner,-,-,ext,JSON,wikidata,x,,https://github.com/Artsdatabanken/nin-arkitektur-dokumentasjon/raw/master/image/ext.png,#606060,#cccccc,https://kartkatalog.geonorge.no/metadata/f015cd24-a14b-42f3-b695-848cb88d9657
+wikidata-fylker,-,-,ext,JSON,wikidata,x,,https://github.com/Artsdatabanken/nin-arkitektur-dokumentasjon/raw/master/image/ext.png,#606060,#cccccc,https://kartkatalog.geonorge.no/metadata/f015cd24-a14b-42f3-b695-848cb88d9657
+wikidata-naturvernområder,-,-,ext,JSON,wikidata,x,,https://github.com/Artsdatabanken/nin-arkitektur-dokumentasjon/raw/master/image/ext.png,#606060,#cccccc,https://kartkatalog.geonorge.no/metadata/f015cd24-a14b-42f3-b695-848cb88d9657
